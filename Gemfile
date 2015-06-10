@@ -6,6 +6,7 @@ gem 'simple_form'
 gem 'carrierwave'
 gem 'carrierwave-aws'
 gem 'mini_magick'
+gem 'dotenv-rails'
 
 ruby '2.2.2'
 gem 'rails_12factor'
