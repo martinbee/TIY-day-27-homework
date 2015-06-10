@@ -14,7 +14,7 @@ class PagesController < ApplicationController
     if @current_user.present? && @current_user.admin_status == true
       @photo = Photo.new
     else
-      redirect_to :root
+      redirect_to :root, notice: "👮 Nope"
     end
   end
 
