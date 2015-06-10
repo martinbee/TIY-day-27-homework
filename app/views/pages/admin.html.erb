@@ -1,0 +1,8 @@
+<h1 class="page-header"> Welcome </h1>
+
+<%= simple_form_for @photo do |f| %>
+  <%= f.input :picture %>
+  <%= f.submit class:"btn btn-primary" %>
+<% end %>
+
+<%= link_to (image_tag 'Home.png', height: 30, width: 30), :root %>
