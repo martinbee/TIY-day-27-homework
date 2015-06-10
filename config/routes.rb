@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'tags/show'
+
   root 'pages#index', as: :root
 
   get 'admin' => 'pages#admin', as: :admin
@@ -9,6 +11,8 @@ Rails.application.routes.draw do
   delete 'sign_out' => 'session#delete', as: :sign_out
 
   post 'authenticate' => 'session#create', as: :authenticate
+
+  get 'tag' => 'tags#show', as: :tag
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

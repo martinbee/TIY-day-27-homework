@@ -10,8 +10,8 @@ gem 'dotenv-rails'
 
 ruby '2.2.2'
 gem 'rails_12factor'
-
-
+gem 'acts_as_follower'
+gem 'acts-as-taggable-on', '~>3.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'

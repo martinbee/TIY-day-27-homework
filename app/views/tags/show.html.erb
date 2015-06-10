@@ -1,0 +1,8 @@
+<h1 class="page-header"><%=@tag_name.capitalize %> Photos</h1>
+<div>
+  <% @photos.each do |photo| %>
+    <%= image_tag photo.picture, height: 350, width: 350 %>
+  <% end %>
+</div>
+<br>
+<%= link_to (image_tag 'Home.png', height: 35, width: 35), :root %>

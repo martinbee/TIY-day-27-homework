@@ -25,7 +25,7 @@ class PagesController < ApplicationController
       return
     end
 
-    @photo = Photo.new params.require(:photo).permit(:picture)
+    @photo = Photo.new params.require(:photo).permit(:picture, :tag_list)
     if @photo.save
       redirect_to :root
     else
